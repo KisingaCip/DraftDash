@@ -93,6 +93,7 @@ ui <- material_page(
         material_card(title = "Project Indicators")
       ),
       material_column(
+        offset = 1,
         width = 6,
         material_card(title = "Indicator Progress", plotOutput("genderplot"))
       )
