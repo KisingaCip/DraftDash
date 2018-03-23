@@ -1,5 +1,9 @@
 
-library(pacman)
+if (!require('pacman')) {
+  install.packages('pacman')
+  library(pacman)
+}
+
 p_load(shiny, shinymaterial, shinydashboard, shinyWidgets)
 
 ui <- material_page(
